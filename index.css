@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Edu SA Beginner', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(0, 75, 132);
+    justify-content: center;
+position: relative;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.start h1{
+    color: rgb(255, 255, 255);
+}
+.start{
+    background-color:rgb(0, 72, 48) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50vw;
+    height: 30vh;
+
+
+    border-radius: 10px;
+    
+}
+.cross{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.circle{
+    display: flex;
+    align-items:center ;
+    gap: 3%;
+}
+input{
+    text-align: center;
+    fill: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input:focus , input:active{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+padding-bottom: 7px;
+
+}
+.starting{
+    color: white;
+    font-size: 1rem;
+    padding: .5em 2em;
+    cursor: pointer;
+    margin: 2% 0;
+    border: solid 3px gray;
+    background-color: rgb(0, 0, 0);
+}
+.starting:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 2% 0;
+    border: solid 3px rgb(43, 0, 145);
+    background-color: rgb(255, 255, 255);
+}
+
+.game-surface{
+    display: grid;
+    background-color: rgba(99, 104, 0, 0.901);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    min-width: 312px;
+    width:35vw;
+    height: fit-content;
+    
+}
+.square{
+border: solid 1px black;
+height:16vh;
+display:flex ;
+justify-content: center;
+align-items: center;
+}
+.square:hover{
+border:solid 1px rgb(255, 255, 255) ;
+}
+
+.icons-custom{
+    font-size:3rem;
+}
+.score{
+    padding: 1rem;
+}
